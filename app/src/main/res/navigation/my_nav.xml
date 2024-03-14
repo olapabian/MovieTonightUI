@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.movietonightui.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/changeFragmentToLoginFromRegister"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/changeFragmentToStartGroupFromStart"
+            app:destination="@id/startGroupFragment" />
+        <action
+            android:id="@+id/changeFragmentToStartQuickQuizFromStart"
+            app:destination="@id/startQuickQuiz"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.movietonightui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/changeFragmentToStartFromLogin"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/changeFragmentToRegisterFromLogin"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.movietonightui.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/changeFragmentToLoginFromRegister"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startGroupFragment"
+        android:name="com.example.movietonightui.StartGroupFragment"
+        android:label="fragment_start_group"
+        tools:layout="@layout/fragment_start_group" >
+        <action
+            android:id="@+id/changeFragmentToStartFromStartGroup"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startQuickQuiz"
+        android:name="com.example.movietonightui.StartQuickQuiz"
+        android:label="fragment_start_quick_quiz"
+        tools:layout="@layout/fragment_start_quick_quiz" >
+        <action
+            android:id="@+id/changeFragmentToStartFromStartQuickQuiz"
+            app:destination="@id/startFragment" />
+    </fragment>
+</navigation>

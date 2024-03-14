@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MovieTonightUI</string>
+    <string name="loginButton">Logowanie</string>
+    <string name="quickQuizButton">Quiz Szybki</string>
+    <string name="loginConfirmButton">Zaloguj</string>
+    <string name="registerButton">Zarejestruj</string>
+    <string name="backToStartButton">BackToStart</string>
+    <string name="goToGroup">Zagraj grupą</string>
+    <string name="backToStartLogin">BackToLogin</string>
+
+</resources>
